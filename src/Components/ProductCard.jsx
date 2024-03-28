@@ -14,7 +14,7 @@ export default function ProductCard({price, title, id, imageURL}) {
     toast.success('Added to cart')
   }
   return (
-    <div className='m-1' onClick={handleClickProduct}>
+    <div className='m-1 transition-hover box-shadow' onClick={handleClickProduct}>
      <Card style={{ width: '18rem', cursor: 'pointer' }}>
       <Card.Img variant="top" src={imageURL} />
       <Card.Body className='d-flex flex-column justify-content-between'>
