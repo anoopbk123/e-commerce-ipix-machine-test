@@ -29,7 +29,7 @@ export default function CategoryBasedProducts({ title, id }) {
   };
   useEffect(() => {
     fetchProducts();
-  }, []);
+  },[]);
   return (
     <div className="container">
       <h3 className="h3 mx-3">{title}</h3>

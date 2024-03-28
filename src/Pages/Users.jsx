@@ -57,7 +57,7 @@ export default function Users() {
                     userData.map((user)=>(
                         <tr key={user.id}>
                             <td>{user.id}</td>
-                            <td><img alt={`${user.name} profile picture`} style={{maxWidth:"100px"}} src={user.avatar} /></td>
+                            <td><img alt={`${user.name} profile`} style={{maxWidth:"100px"}} src={user.avatar} /></td>
                             <td>{user.name}</td>
                             <td>{user.email}</td>
                         </tr>

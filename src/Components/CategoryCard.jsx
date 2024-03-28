@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 
 export default function CategoryCard({title, id, imageURL}) {
     const navigate = useNavigate()
