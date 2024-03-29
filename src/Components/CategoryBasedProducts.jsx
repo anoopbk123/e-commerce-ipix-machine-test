@@ -11,8 +11,9 @@ export default function CategoryBasedProducts({ title, id }) {
       if (response.status >= 200 && response.status < 300) {
         const data = response.data;
         if (data) {
+          console.log("Products:", data);
           if (data.length === 0) {
-            toast.error("No products available");
+            toast.error(`No products available in ${title}`);
           } else {
             // console.log("Products:", data);
             setProductsData(data);
